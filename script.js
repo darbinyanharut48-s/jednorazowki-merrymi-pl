@@ -54,7 +54,7 @@ document.getElementById('hamburger').addEventListener('click', function() {
 // Filter tabs for marketplace
 (function(){
     const tabs = Array.from(document.querySelectorAll('.filter-tab'));
-    const cards = Array.from(document.querySelectorAll('.nft-card'));
+    const cards = Array.from(document.querySelectorAll('.marketplace:not(.new-product) .nft-card'));
     if (!tabs.length || !cards.length) return;
 
     function setActive(tab){
